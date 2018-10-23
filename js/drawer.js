@@ -36,7 +36,7 @@ drawer.hammer.on("pan", function(ev) {
 		drawer.isDragging = false;
 		drawer.elem.classList.add('slide');
 
-    	if ((posY < (h*0.9-64) ) && !drawer.isUp){		//swipe drawer UP
+    	if ((posY < (h*0.96-64) ) && !drawer.isUp){		//swipe drawer UP
     		drawer.elem.style.top = "0px";
     		drawer.isUp = true;
     	} else if (!drawer.isUp){						//Drawer swipe cancelled
